@@ -1,0 +1,16 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20  # Match your Node.js version
+    commands:
+      - echo "Installing dependencies..."
+      - npm install
+  build:
+    commands:
+      - echo "Building..."
+      - npm test  # Optional: Add if you have tests
+artifacts:
+  files:
+    - '**/*'  # Include all files in the artifact
+  discard-paths: no
