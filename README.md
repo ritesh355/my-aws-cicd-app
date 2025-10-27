@@ -24,11 +24,32 @@ This repository hosts a Node.js application (`my-app`) that serves a "Hello from
 - **Monitoring**: Application logs (`app.log`) for debugging and verification.
 
 ## 📁 Repository Structure
-my-aws-cicd-app/
-├── appspec.yml           # CodeDeploy configuration for EC2 deployment
-├── buildspec.yml         # CodeBuild configuration for artifact creation
-├── index.js              # Node.js application entry point
-├── package.json          # Node.js dependencies and scripts
-├── scripts/
-│   └── install_deps.sh   # Script to install dependencies during deployment
-└── .gitignore            # Excludes node_modules and package-lock.json
+
+
+## 🛠️ Setup and Deployment
+
+### Prerequisites
+- **AWS Account**: Permissions for CodePipeline, CodeBuild, CodeDeploy, EC2, and S3.
+- **GitHub Account**: Repository `ritesh/my-aws-cicd-app` with push access.
+- **Node.js**: Version 20.19.5 (with npm 10.8.2).
+- **EC2 Instance**: Ubuntu with CodeDeploy agent installed.
+
+### Local Setup
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/ritesh/my-aws-cicd-app.git
+   cd my-aws-cicd-app
+   ```
+2. **Install dependencies**:
+   ```
+   npm install
+   ```
+3. **Run Locally:**:
+   ```
+   node index.js
+   ```
+- Access at http://localhost:3000.
+
+---
+
+
