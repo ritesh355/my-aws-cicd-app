@@ -8,10 +8,11 @@ phases:
   build:
     commands:
       - echo Build completed
+      - rm -rf node_modules package-lock.json
 artifacts:
   files:
-    - '**/*'
+    - appspec.yml
+    - index.js
+    - package.json
+    - scripts/**/*
   discard-paths: no
-  exclude:
-    - node_modules/**
-    - package-lock.json
