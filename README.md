@@ -118,8 +118,8 @@ cat /home/ubuntu/.npm/_logs/*.log
 
 # 📬 Contact
 
-- **GitHub:** [https://github.com/ritesh355/]   
-- **LinkedIn:** [https://www.linkedin.com/in/ritesh-singh-092b84340/]  
+- **GitHub:** (https://github.com/ritesh355/)   
+- **LinkedIn:** (https://www.linkedin.com/in/ritesh-singh-092b84340/) 
 
 Feel free to explore, fork, or contribute to this project! 🚀
 
