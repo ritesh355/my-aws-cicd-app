@@ -53,4 +53,31 @@ This repository hosts a Node.js application (`my-app`) that serves a "Hello from
 
 ---
 
+# AWS CI/CD Pipeline Setup
+
+## GitHub Source
+- Connected via AWS Connector for GitHub (connection: MyAppGitHubConnection).
+- Webhook triggers pipeline on main branch pushes.
+
+## CodeBuild (MyAppBuild)
+Uses `buildspec.yml` to:
+- Install Node.js 18.
+- Run `npm install`.
+- Create `build-artifact.zip`.
+
+Artifact stored in `s3://myapp-cicd-artifacts-123`.
+
+## CodeDeploy (MyAppDeploy)
+- Deploys to EC2 (ProductionGroup, instance ip-172-31-19-118).
+- `appspec.yml` defines deployment steps.
+- `install_deps.sh` handles npm install with permissions fixes.
+
+## CodePipeline (MyAppPipeline)
+### Stages:
+1. **Source:** GitHub (ritesh/my-aws-cicd-app, main).
+2. **Build:** CodeBuild (MyAppBuild).
+3. **Deploy:** CodeDeploy (MyAppDeploy, ProductionGroup).
+
+- Automatic retries enabled for transient failure recovery.
+
 
