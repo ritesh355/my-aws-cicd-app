@@ -1,4 +1,4 @@
-# AWS CI/CD Node.js Application
+ # AWS CI/CD Node.js Application
 
 ![AWS CI/CD Pipeline](https://img.shields.io/badge/AWS-CodePipeline-blue) ![Node.js](https://img.shields.io/badge/Node.js-v20.19.5-green) ![GitHub](https://img.shields.io/badge/GitHub-Repository-brightgreen)
 ![](assets/final.png)
