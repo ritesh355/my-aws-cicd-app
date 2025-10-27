@@ -1,2 +1,2 @@
 #!/bin/bash
-pkill node  # Simple way to stop Node.js; use pm2 or systemd for production
+pkill node || true  # Ignore failure if no node process exists
