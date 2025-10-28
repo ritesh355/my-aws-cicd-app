@@ -324,8 +324,15 @@ cat /home/ubuntu/.npm/_logs/*.log
 
 # 📬 Contact
 
-- **GitHub:** (https://github.com/ritesh355/)   
-- **LinkedIn:** (https://www.linkedin.com/in/ritesh-singh-092b84340/) 
+## 👨‍💻 Author
+
+**Ritesh Singh**
+
+🌐 [LinkedIn](https://www.linkedin.com/in/ritesh-singh-092b84340/) 
+|
+📝 [Hashnode](https://ritesh-devops.hashnode.dev/) 
+|
+💻[GitHub](https://github.com/ritesh355/)
 
 Feel free to explore, fork, or contribute to this project! 🚀
 
