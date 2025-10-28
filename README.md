@@ -301,6 +301,9 @@ chmod -R u+w node_modules package-lock.json 2>/dev/null || true
 | **Deploy**  | CodeDeploy     | `MyAppDeploy`, `ProductionGroup`       |
 
 ---
+
+**Live App**: http://<your-ec2-ip>:3000
+
 # 🐞 Troubleshooting
 
 ## Common Issue:
