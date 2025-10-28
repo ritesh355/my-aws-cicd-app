@@ -29,7 +29,7 @@ This repository hosts a Node.js application (`my-app`) that serves a "Hello from
  --- 
 
 ## 📁 Repository Structure
-![](assets/repostructure.png)
+![](assets/flo.png)
 
 ## 🛠️ Setup and Deployment
 
