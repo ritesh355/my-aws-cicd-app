@@ -268,7 +268,7 @@ chmod -R u+w node_modules package-lock.json 2>/dev/null || true
 
 ---
 ### Step 8: AWS CodeBuild Project (MyAppBuild)
-
+![](assets/codebuild1.png)
 
 | Field          | Value                                    |
 |----------------|------------------------------------------|
@@ -280,6 +280,8 @@ chmod -R u+w node_modules package-lock.json 2>/dev/null || true
 
 ---
 ### Step 9: AWS CodeDeploy Application (MyAppDeploy)
+
+![](assets/dep1.png)
 - **Application Name**: MyAppDeploy
 - **Compute Platform**: EC2/On-Premises
 - **Deployment Group**: ProductionGroup
@@ -290,6 +292,7 @@ chmod -R u+w node_modules package-lock.json 2>/dev/null || true
 ---
 
 ### step 10 AWS CodePipeline (`MyAppPipeline`)
+![](assets/final.png)
 
 | Stage   | Provider       | Configuration                          |
 |---------|----------------|----------------------------------------|
