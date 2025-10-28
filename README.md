@@ -195,6 +195,7 @@ AWSCodeDeployRole → Predefined AWS managed policy
 git init
 git remote add origin https://github.com/ritesh/my-aws-cicd-app.git
 ```
+![](assets/git.png)
 .gitignore:
 ```text
 node_modules/
@@ -205,6 +206,8 @@ Why? Prevents EACCES errors by excluding locked files from artifacts.
 ---
 
 ### Step 5: buildspec.yml — Build Configuration
+
+![](assets/builspec.png)
 ```yml
 version: 0.2
 phases:
@@ -230,6 +233,8 @@ artifacts:
 
 ---
 ### Step 6: appspec.yml — Deployment Steps
+
+![](assets/appspec.png)
 ```yml
 version: 0.1
 os: linux
